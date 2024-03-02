@@ -19,7 +19,7 @@ public class BankAccountTest {
     @ParameterizedTest
     public void testWithdraw(BankAccount account) {
         account.withdraw(50.0);
-        assertEquals(50.0, account.getBalance());
+        assertEquals(50.0f, account.getBalance());
     }
 
     @MethodSource("arguments")
